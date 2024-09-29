@@ -1,0 +1,18 @@
+# Define positions
+global home_position = p[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+global target_position = p[0.3, 0.2, 0.1, 0.0, 3.14, 0.0]
+
+# Set speed and acceleration
+global speed = 0.5
+global acceleration = 0.25
+
+# Move to target position
+movej(target_position, a=acceleration, v=speed)
+
+# Pause for 2 seconds
+sleep(2.0)
+
+# Return to home position
+movej(home_position, a=acceleration, v=speed)
+
+# End of program

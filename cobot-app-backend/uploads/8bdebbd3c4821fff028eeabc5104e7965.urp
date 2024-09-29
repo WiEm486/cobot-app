@@ -1,0 +1,9 @@
+
+global home_position = p[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+global target_position = p[0.3, 0.2, 0.1, 0.0, 3.14, 0.0]
+global speed = 0.5
+global acceleration = 0.25
+movej(target_position, a=acceleration, v=speed)
+sleep(2.0)
+movej(home_position, a=acceleration, v=speed)
+

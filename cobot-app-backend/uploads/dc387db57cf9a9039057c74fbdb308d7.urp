@@ -1,0 +1,13 @@
+def move_to_position():
+  
+    joint_positions = [1.0, 0.5, -1.0, -0.5, 1.5, -1.5]
+ 
+    joint_speed = 0.5
+    
+
+    joint_acceleration = 0.5
+    
+
+    movej(joint_positions, a=joint_acceleration, v=joint_speed)
+
+move_to_position()

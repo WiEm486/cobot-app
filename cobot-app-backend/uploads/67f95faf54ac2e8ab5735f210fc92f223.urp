@@ -1,0 +1,8 @@
+
+def move_to_position():
+    target_position = p[0.3, 0.2, 0.1, 0.0, 3.14, 0.0]
+    speed = 0.5
+    acceleration = 0.25
+    movej(target_position, a=acceleration, v=speed)
+end
+move_to_position()

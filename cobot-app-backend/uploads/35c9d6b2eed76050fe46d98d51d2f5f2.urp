@@ -1,0 +1,14 @@
+def get_robot_parameters():
+  socket_open("192.168.1.18", 30002)  # Use your machine's IP and an available port
+  joint_positions = get_actual_joint_positions()
+  tcp_speed = get_actual_tcp_speed()
+  payload = get_payload()
+  
+  socket_send_string("Joint Positions: " + to_str(joint_positions) + "\n")
+  socket_send_string("TCP Speed: " + to_str(tcp_speed) + "\n")
+  socket_send_string("Payload: " + to_str(payload) + "\n")
+  
+  socket_close()
+end
+
+get_robot_parameters()

@@ -1,0 +1,4 @@
+def simple_move():
+    movej([0, -1.57, 1.57, 0, 1.57, 0], a=1.2, v=0.25)
+end
+simple_move()

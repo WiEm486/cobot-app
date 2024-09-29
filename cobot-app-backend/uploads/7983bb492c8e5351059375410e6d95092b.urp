@@ -1,0 +1,14 @@
+def move_to_position():
+    # Définir les positions des joints en radians
+    joint_positions = [2, 3, -1.0, -0.5, 1.5, -1.5]
+    
+    # Vitesse de déplacement (en radians par seconde)
+    joint_speed = 1
+    
+    # Accélération (en radians par seconde au carré)
+    joint_acceleration = 1
+    
+    # Déplacer le robot à la position spécifiée
+    movej(joint_positions, a=joint_acceleration, v=joint_speed)
+
+move_to_position()
